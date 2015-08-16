@@ -1,0 +1,4 @@
+{
+    "apikey": "your-asana-api-key",
+    "workspace": 123456789 // your asana workspace id
+}
