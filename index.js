@@ -193,7 +193,7 @@ AsanaTaskCacher.prototype._putUsers = function(users) {
  * @resolves list of users in db
  */
 AsanaTaskCacher.prototype.loadUsersToCache = function() {
-    return dbs.status.all().then(function(users) {
+    return this.users.all().then(function(users) {
         this.cache.users = users;
         this.cache.usersById = {};
         users.forEach(function(user) {

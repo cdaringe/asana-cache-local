@@ -48,3 +48,13 @@ test('refresh', function(t) {
     .then(t.end)
     .catch(function(err) { console.dir(err); t.fail(); });
 });
+
+test('loadUsersToCache', function(t) {
+    t.plan(2);
+    // test that data is in db post-refresh
+    cacher.loadUsersToCache().then(function() {
+        t.ok(cacher.cache.users.length, 'cached user list present');
+        t.ok(cacher.cache.usersById[8701585143073], 'cached users by id present');
+        t.end();
+    });
+});
