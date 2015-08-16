@@ -1,5 +1,5 @@
 {
-  "name": "asana-stats",
+  "name": "asana-cache-local",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
