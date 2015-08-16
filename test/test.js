@@ -1,10 +1,10 @@
 'use strict';
-// tests perform _no_ mocking ATM. must provide real workspace and have assigned tasks
 var test = require('tape');
-var config = require('config');
 var asana = require('asana');
 var moment = require('moment')
-var client = asana.Client.create().useBasicAuth(config.apikey);
+var client = asana.Client.create().useBasicAuth('fake-key');
+
+// mock api
 var dummyUsers = [{ id: 8701585143073, lastUpdate: moment().format(), name: 'bill brasky' }];
 var dummyTasks = [{ id: 10007255869124,  created_at: '2014-02-04T00:11:10.055Z',  modified_at: '2015-08-03T20:19:40.835Z',  name: 'abc',  notes: '',  completed: false,  assignee_status: 'upcoming',  completed_at: null,  due_on: null,  parent: null,  assignee: 8701585143073  }];
 client.users.findAll = function() { return Promise.resolve({ data: dummyUsers, _response: {} }); };
@@ -15,7 +15,7 @@ var log = function() { console.dir(arguments); };
 var cacher = new Cacher({
     client: client,
     dbpath: 'test/db',
-    workspace: config.workspace,
+    workspace: 123456789, // fake workspace
     verbose: true
 });
 

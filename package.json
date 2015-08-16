@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "asana": "^0.9.1",
-    "config": "^1.15.0",
     "pre-commit": "^1.1.1",
     "tape": "^4.2.0"
   }
