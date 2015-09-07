@@ -11,6 +11,10 @@
     "publish-minor": "npm run preversion && npm version minor && git push origin master --tags && npm publish",
     "publish-major": "npm run preversion && npm version major && git push origin master --tags && npm publish"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdaringe/asana-cache-local.git"
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {
