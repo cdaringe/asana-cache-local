@@ -18,13 +18,13 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "lodash.indexby": "^3.1.1",
-    "moment": "^2.10.6",
-    "pouchdb-wrapper": "latest"
+    "lodash.indexby": "3.1.1",
+    "moment": "2.10.6",
+    "pouchdb-wrapper": "2.0.3"
   },
   "devDependencies": {
-    "asana": "^0.9.1",
-    "pre-commit": "^1.1.1",
-    "tape": "^4.2.0"
+    "asana": "0.9.7",
+    "pre-commit": "1.1.1",
+    "tape": "4.2.0"
   }
 }
