@@ -1,5 +1,5 @@
 'use strict';
-var PouchW = require('pouchdb-wrapper');
+var Pouchy = require('pouchy');
 var moment = require('moment');
 var indexBy = require('lodash.indexby');
 
@@ -19,8 +19,8 @@ var AsanaTaskCacher = function(opts) {
 
     this.taskFields = opts.taskFields || 'completed,completed_at,created_at,due_on,assignee_status,modified_at,parent,notes,name';
 
-    this.users = new PouchW({ name: 'db-users', path: opts.dbpath }); // [{ userId: 123, lastUpdate: 8601 }]
-    this.tasks = new PouchW({ name: 'db-tasks', path: opts.dbpath });
+    this.users = new Pouchy({ name: 'db-users', path: opts.dbpath }); // [{ userId: 123, lastUpdate: 8601 }]
+    this.tasks = new Pouchy({ name: 'db-tasks', path: opts.dbpath });
 
     this.cache = {};
 };
