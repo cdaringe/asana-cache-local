@@ -1,7 +1,7 @@
 [ ![Codeship Status for cdaringe/asana-cache-local](https://codeship.com/projects/a2af4ee0-2664-0133-c165-42218616331f/status?branch=master)](https://codeship.com/projects/97075)
 
 # asana-cache-local
-cache all tasks within an [asana](http://asana.com/) workspace, onto your local machine.  caches _only_ tasks that have been assigned.  tasks are all stored in a single KV store. `cache.refresh()` uses the asana incrimental API, and only pulls down updates on tasks since they have last been modified, or new tasks since the store has last been updated. :)
+cache all tasks within an [asana](http://asana.com/) workspace, onto your local machine.  caches _only_ tasks that have been assigned.  tasks are all stored in a single NoSQL store. `cache.refresh()` uses the asana incrimental API, and only pulls down updates on tasks since they have last been modified, or new tasks since the store has last been updated. :)
 
 ```js
 // example
@@ -35,8 +35,8 @@ cacher.refresh()
     - @default 'completed,completed_at,created_at,due_on,assignee_status,modified_at,parent,notes,name'
 
 ### properties
-- @property tasks - [PouchDB-Wrapper](https://github.com/cdaringe/pouchdb-wrapper) datastore of asana tasks
-- @property users - [PouchDB-Wrapper](https://github.com/cdaringe/pouchdb-wrapper)  of asana users
+- @property tasks - [Pouchy](https://github.com/cdaringe/pouchy) datastore of asana tasks
+- @property users - [Pouchy](https://github.com/cdaringe/pouchy)  of asana users
 
 ## methods
 
