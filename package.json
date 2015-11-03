@@ -20,7 +20,7 @@
   "dependencies": {
     "lodash.indexby": "^3.1.1",
     "moment": "^2.10.6",
-    "pouchy": "^3.0.0"
+    "pouchy": "^4.0.0"
   },
   "devDependencies": {
     "asana": "^0.12.1",
