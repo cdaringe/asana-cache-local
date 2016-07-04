@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "lodash.indexby": "^3.1.1",
-    "moment": "^2.10.6",
+    "moment": "^2.14.0",
     "pouchy": "^9.0.1"
   },
   "devDependencies": {
