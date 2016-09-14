@@ -23,7 +23,7 @@
     "pouchy": "^9.0.1"
   },
   "devDependencies": {
-    "asana": "^0.14.0",
+    "asana": "^0.15.0",
     "pre-commit": "^1.1.1",
     "tape": "^4.2.0"
   }
