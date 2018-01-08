@@ -1,6 +1,8 @@
 [ ![Codeship Status for cdaringe/asana-cache-local](https://codeship.com/projects/a2af4ee0-2664-0133-c165-42218616331f/status?branch=master)](https://codeship.com/projects/97075)
 
 # asana-cache-local
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/cdaringe/asana-cache-local.svg)](https://greenkeeper.io/)
 cache all tasks within an [asana](http://asana.com/) workspace, onto your local machine.  caches _only_ tasks that have been assigned.  tasks are all stored in a single NoSQL store. `cache.refresh()` uses the asana incrimental API, and only pulls down updates on tasks since they have last been modified, or new tasks since the store has last been updated. :)
 
 ```js
